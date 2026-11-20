@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31.135" height="31.136" viewBox="0 0 31.135 31.136">
+  <g id="Arrow" transform="translate(0.5 0.5)">
+    <g id="Arrow-2" data-name="Arrow" transform="translate(0 0)">
+      <g id="_x31_5-interface_-_arrow_right_1_">
+        <g id="Gruppe_28" data-name="Gruppe 28">
+          <path id="Pfad_15" data-name="Pfad 15" d="M20.465,15.327,12.947,7.808a.935.935,0,1,0-1.323,1.323l6.883,6.883L11.625,22.9a.935.935,0,1,0,1.323,1.323l7.519-7.52c.01-.009.026-.005.036-.015a.97.97,0,0,0,0-1.343C20.492,15.332,20.476,15.336,20.465,15.327ZM16.063.946A15.068,15.068,0,1,0,31.131,16.014,15.068,15.068,0,0,0,16.063.946Zm0,28.252A13.184,13.184,0,1,1,29.247,16.014,13.184,13.184,0,0,1,16.063,29.2Z" transform="translate(-0.996 -0.946)" fill="#fff" stroke="#fff" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

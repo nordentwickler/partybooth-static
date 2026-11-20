@@ -1,0 +1,42 @@
+/**
+ *
+ * Button component
+ *
+ */
+
+.btn {
+  @apply rounded-lg px-8 py-4 text-xl font-bold font-display;
+  &.btn--white {
+    @apply text-blue-600 bg-white;
+    &:hover {
+      @apply text-white bg-blue-700;
+    }
+  }
+
+  &.btn--orange {
+    @apply text-white shadow-lg relative;
+    z-index: 1;
+
+    background: #f2635b;
+    background: -moz-linear-gradient(left, #f2635b 0%, #f77f79 100%);
+    background: -webkit-linear-gradient(left, #f2635b 0%, #f77f79 100%);
+    background: linear-gradient(to right, #f2635b 0%, #f77f79 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2635b', endColorstr='#f77f79', GradientType=1);
+
+    &:hover{
+      background: #358ffb;
+      background: -moz-linear-gradient(left, #2c7ee6 0%, #4c9ffe 100%);
+      background: -webkit-linear-gradient(left, #2c7ee6 0%, #4c9ffe 100%);
+      background: linear-gradient(to right, #2c7ee6 0%, #4c9ffe 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c7ee6', endColorstr='#4c9ffe', GradientType=1);
+    }
+
+  }
+
+  &.btn--blue {
+    @apply text-white bg-primary opacity-50;
+    &:hover {
+      @apply opacity-100 ;
+    }
+  }
+}

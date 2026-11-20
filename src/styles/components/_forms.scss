@@ -1,0 +1,56 @@
+/**
+ *
+ * Form component
+ *
+ */
+
+/* purgecss start ignore */
+
+label{
+  @apply text-gray-600 mb-4;
+  span{
+    @apply block;
+  }
+}
+
+.switch{
+  background:rgba(0,0,0,0.6);
+  @apply fixed bottom-0 z-50 left-0 right-0 mx-2 mb-2 flex justify-between;
+  @screen lg{
+    background:rgba(255,255,255,0.2);
+    @apply static w-auto mx-0 mb-0;
+  }
+
+  &.sticked{
+    @screen lg {
+      background:rgba(0,0,0,0.8);
+      @apply fixed bottom-0 z-50 mx-2 mb-2 flex justify-center w-auto;
+      max-width:240px;
+      left:50%;
+      transform: translateX(-50%);
+
+    }
+  }
+}
+
+.switch-radio{
+  @apply w-1/2 text-center;
+  @screen lg{
+    @apply w-auto;
+  }
+  input{
+    @apply hidden;
+    &:checked + label{
+      @apply border-2 border-white;
+    }
+  }
+  label{
+    @apply mr-2 px-4 py-2 block rounded-lg border-2 border-transparent font-bold text-white;
+    &:hover{
+      @apply cursor-pointer;
+      border-color:rgba(255,255,255,0.6);
+    }
+  }
+}
+
+/* purgecss end ignore */

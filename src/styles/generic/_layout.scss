@@ -1,0 +1,150 @@
+/**
+ *
+ * Generic layout
+ *
+ */
+
+/* purgecss start ignore */
+.intro-bg {
+  @screen lg {
+    background-image: linear-gradient(to left top, #2c5282, #2f5e93, #3169a4, #3276b6, #3182c8);
+  }
+}
+
+// Intro Hintergrund
+.bg-blue-image {
+  background-image: url("../img/blue-bg.jpg");
+  transition: background-image 0.2s ease-in-out;
+
+  @apply bg-cover;
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+
+    background: url("../img/blue-bg@2x.jpg");
+
+  }
+}
+
+// C2A Hintergrund
+
+.bg-blue-image-2 {
+  background-image: url("../img/blue-bg-2.jpg");
+  transition: background-image 0.2s ease-in-out;
+  @apply bg-cover bg-center;
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+
+    background: url("../img/blue-bg-2@2x.jpg");
+
+  }
+}
+
+.before-rectangle {
+  @screen lg {
+    @apply relative;
+    &:before {
+      content: '';
+      margin-left: -8rem;
+      @apply absolute left-0 h-full bg-blue-100 w-1/2 top-0 bottom-0 rounded-xl;
+    }
+  }
+}
+
+// Theme Shit #################  !!!!!!!!!!!!
+[data-theme="classic"] {
+
+  .bg-blue-image {
+    background-image: url("../img/gray-bg.jpg");
+    transition: background-image 0.2s ease-in-out;
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+
+      background: url("../img/gray-bg@2x.jpg");
+
+    }
+  }
+
+  .bg-blue-image-2 {
+    background-image: url("../img/gray-bg-2.jpg");
+    transition: background-image 0.2s ease-in-out;
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+
+      background: url("../img/gray-bg-2@2x.jpg");
+
+    }
+  }
+
+  .before-rectangle {
+    &:before {
+      @apply bg-gray-200;
+    }
+  }
+
+  .elegant {
+    @apply hidden;
+  }
+
+  .classic {
+    @apply block;
+  }
+
+  .tns-nav{
+    button{
+
+      &.tns-nav-active{
+          background:#707285;
+      }
+    }
+  }
+  .testimonial-slider-container {
+    .testimonial-slider-element {
+      border-color: #EBEBEE;
+      .name{
+        color:#707285 ;
+      }
+    }
+  }
+}
+
+.bg-raster-1 {
+  background-image: url("../img/bg-raster-1.jpg");
+
+  @apply bg-contain bg-repeat relative;
+
+  &:before {
+    content: '';
+    height: 60px;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+
+    @apply absolute top-0 left-0 right-0 w-full;
+  }
+
+  &:after {
+    content: '';
+    height: 60px;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+
+    @apply absolute bottom-0 left-0 right-0 w-full;
+  }
+}
+
+
+.drop-shdow{
+  -webkit-filter: drop-shadow(0px 0px 64px rgba(0,0,0,0.05));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#444')";
+}
+
+/* purgecss end ignore */

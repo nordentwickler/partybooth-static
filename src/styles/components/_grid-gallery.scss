@@ -1,0 +1,16 @@
+.grid-gallery {
+  @screen sm {
+    column-count: 2;
+    column-gap: 0.5em;
+    -moz-column-gap: 0.5em;
+    -webkit-column-gap: 0.5em;
+  }
+  @screen lg {
+    column-count: 3;
+    column-gap: 1em;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+  }
+
+
+}
